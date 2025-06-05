@@ -2,12 +2,12 @@
 #pip install langchain-openai
 #pip install streamlit
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from langchain_openai import ChatOpenAI
 import os
-chat_model = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+chat_model = ChatOpenAI()
 
 # subject = "AI"
 # result = chat_model.invoke(subject + "에 대한 시를 써줘.")
